@@ -1,0 +1,128 @@
+.infocard {
+  --main-color: #000;
+  --submain-color: #78858f;
+  --bg-color: #a4a4a454;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 315px;
+  max-width: 500px;
+  min-height: 405px;
+  max-height: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background: var(--bg-color);
+}
+.infocard .infocard__wrapper {
+  padding: 10px;
+  width: 100%;
+  flex-grow: 1;
+}
+.infocard .infocard__wrapper .div-navtabs {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.infocard .infocard__wrapper .div-navtabs .nav-tabs {
+  border: none;
+}
+.infocard .infocard__wrapper .div-navtabs .nav-link.active {
+  background-color: rgba(164, 164, 164, 0.3294117647);
+  color: #5d1a05;
+}
+.infocard .infocard__wrapper .div-navtabs .nav-link {
+  color: #1c1c1c;
+  margin: 0;
+  border: none;
+}
+.infocard .infocard__wrapper .div-navtabs .nav-link:hover:not(.active) {
+  background-color: rgba(136, 66, 45, 0.4784313725);
+  cursor: pointer;
+}
+.infocard .infocard__wrapper .div-navtabs .tab-content {
+  flex-grow: 1;
+  border-radius: 3px;
+  background-color: rgba(164, 164, 164, 0.3294117647);
+  padding: 10px;
+}
+.infocard .infocard__title span {
+  font-weight: bold;
+}
+
+.infocard__img {
+  height: 102px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  background-color: rgba(120, 133, 143, 0.1254901961);
+}
+
+.infocard__img svg {
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.infocard__avatar {
+  position: absolute;
+  width: 114px;
+  height: 114px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: calc(50% - 237px);
+  background-image: url("../../../assets/lady-avatar.png");
+  background-position: center;
+  background-size: contain;
+  opacity: 0.7;
+  border: 15px solid #a4a4a4;
+}
+
+.infocard__avatar svg {
+  width: 100px;
+  height: 100px;
+}
+
+.infocard__title {
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+.infocard__subtitle {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--submain-color);
+}
+
+.infocard__btn {
+  margin-top: 15px;
+  width: 76px;
+  height: 31px;
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--main-color);
+  background: var(--bg-color);
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.infocard__btn-solid {
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+.infocard__btn:hover {
+  background: var(--main-color);
+  color: var(--bg-color);
+}
+
+.infocard__btn-solid:hover {
+  background: var(--bg-color);
+  color: var(--main-color);
+}

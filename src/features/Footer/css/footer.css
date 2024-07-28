@@ -1,0 +1,24 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.8em;
+  padding: 2px 12px;
+  margin-bottom: 10px;
+}
+footer .div-socialmedia a {
+  color: #2d2d2d;
+  margin-right: 5px;
+}
+footer .div-socialmedia a svg {
+  height: 20px;
+  width: 20px;
+}
+footer .div-socialmedia a:hover {
+  color: rgba(86, 23, 4, 0.8274509804);
+}
+footer .p-copyright {
+  padding: 0;
+  margin: 0;
+}
