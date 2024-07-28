@@ -2,9 +2,13 @@ import { Icon } from "../../components";
 import "./css/footer.css";
 
 const socials = [
-  { id: "twitter", icon: "twitter", link: "" },
-  { id: "linkedin", icon: "linkedin", link: "" },
-  { id: "github", icon: "github", link: "" },
+  { id: "twitter", icon: "twitter", link: "https://x.com/?lang=en" },
+  {
+    id: "linkedin",
+    icon: "linkedin",
+    link: "https:www.linkedin.com/in/ruth-mumo-466152246",
+  },
+  { id: "github", icon: "github", link: "https://github.com/mumorutth" },
 ];
 const Footer = () => {
   return (
