@@ -43,6 +43,10 @@
         border-radius: 3px;
         background-color: #a4a4a454;
         padding: 10px;
+        .tab-pane {
+          height: 100%;
+          width: 100%;
+        }
       }
     }
   }

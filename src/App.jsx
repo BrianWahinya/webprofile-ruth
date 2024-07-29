@@ -5,7 +5,7 @@ import "react-custom-cursors/dist/index.css";
 function App() {
   return (
     <>
-      <Cursor
+      {/* <Cursor
         animation="beat"
         color="#de6e4cdb"
         dotColor="#632f1fdb"
@@ -14,7 +14,7 @@ function App() {
         isHollow
         mixBlendMode={false}
         size="sm"
-      />
+      /> */}
       <Home />
     </>
   );

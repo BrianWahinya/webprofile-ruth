@@ -34,9 +34,7 @@ const NavTabs = ({ data }) => {
       <TabContent activeTab={current}>
         {data.map((item) => (
           <TabPane key={`tabpane_${item.id}`} tabId={item.id}>
-            <Row>
-              <Col sm="12">{item.content}</Col>
-            </Row>
+            {item.content}
           </TabPane>
         ))}
       </TabContent>

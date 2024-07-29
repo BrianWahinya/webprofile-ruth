@@ -47,6 +47,10 @@
   background-color: rgba(164, 164, 164, 0.3294117647);
   padding: 10px;
 }
+.infocard .infocard__wrapper .div-navtabs .tab-content .tab-pane {
+  height: 100%;
+  width: 100%;
+}
 .infocard .infocard__title span {
   font-weight: bold;
 }

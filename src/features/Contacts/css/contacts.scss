@@ -1,0 +1,21 @@
+.div-contacts {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  div {
+    flex: 0 1 50%;
+    box-sizing: border-box;
+    p {
+      padding: 0;
+      margin: 2px;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+}

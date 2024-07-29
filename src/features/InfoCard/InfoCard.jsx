@@ -2,6 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 import "./css/infocard.css";
 import { NavTabs, Icon } from "../../components";
 import Footer from "../Footer/Footer";
+import Contacts from "../Contacts/Contacts";
 
 const datos = [
   {
@@ -22,7 +23,7 @@ const datos = [
   {
     id: "contacts",
     title: <Icon id="contacts" />,
-    content: "Contacts",
+    content: <Contacts />,
   },
 ];
 
