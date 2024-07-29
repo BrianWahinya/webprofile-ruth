@@ -44,8 +44,10 @@
         background-color: #a4a4a454;
         padding: 10px;
         .tab-pane {
+          max-height: 242px;
           height: 100%;
           width: 100%;
+          overflow: auto;
         }
       }
     }

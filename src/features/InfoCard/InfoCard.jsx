@@ -3,12 +3,13 @@ import "./css/infocard.css";
 import { NavTabs, Icon } from "../../components";
 import Footer from "../Footer/Footer";
 import Contacts from "../Contacts/Contacts";
+import About from "../About/About";
 
 const datos = [
   {
     id: "profile",
     title: <Icon id="profile" />,
-    content: "About me",
+    content: <About />,
   },
   {
     id: "education",

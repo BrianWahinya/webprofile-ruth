@@ -168,3 +168,17 @@ body {
     ),
     linear-gradient(90deg, hsl(137, 0%, 23%), hsl(137, 0%, 23%));
 }
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}

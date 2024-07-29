@@ -1,0 +1,35 @@
+.div-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+}
+.div-about p {
+  padding: 0;
+  margin: 2px;
+}
+.div-about .div-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.div-about .div-skills .div-skill {
+  flex: 0 1 25%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 2px;
+  background-color: rgba(75, 75, 75, 0.192);
+}
+.div-about .div-skills .div-skill svg {
+  height: 1.4em;
+  width: 1.4em;
+}
+.div-about .div-skills .div-skill:hover {
+  cursor: pointer;
+  background-color: rgba(136, 66, 45, 0.357);
+}
