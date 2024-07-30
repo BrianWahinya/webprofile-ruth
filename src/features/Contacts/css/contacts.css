@@ -21,4 +21,5 @@
 }
 .div-contacts div:hover .p-contacts-title {
   color: #5d1a05;
+  cursor: pointer;
 }
