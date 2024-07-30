@@ -10,10 +10,16 @@ import {
   FaReact,
   FaDatabase,
   FaPython,
-  FaDocker
+  FaDocker,
+  FaLaptopCode,
+  FaBookOpenReader,
 } from "react-icons/fa6";
-import { GrProjects } from "react-icons/gr";
-import { MdOutlineContactPhone, MdOutlineLocationOn, MdOutlineEmail } from "react-icons/md";
+import { GrProjects, GrCertificate } from "react-icons/gr";
+import {
+  MdOutlineContactPhone,
+  MdOutlineLocationOn,
+  MdOutlineEmail,
+} from "react-icons/md";
 import { FaFacebookSquare } from "react-icons/fa";
 import {
   SiWebmoney,
@@ -22,11 +28,12 @@ import {
   SiPostgresql,
 } from "react-icons/si";
 import { BsMailboxFlag } from "react-icons/bs";
-import { IoLocationOutline } from "react-icons/io5";
+import { IoLocationOutline, IoBookOutline } from "react-icons/io5";
+import { BiBookReader } from "react-icons/bi";
 
 const obj = {
   profile: <CgProfile />,
-  education: <FaGraduationCap />,
+  education: <GrCertificate />,
   projects: <GrProjects />,
   contacts: <FaPhoneVolume />,
   fb: <FaFacebookSquare />,
@@ -43,8 +50,10 @@ const obj = {
   docker: <FaDocker />,
   python: <FaPython />,
   mysql: <SiMysql />,
-  postgres: <SiPostgresql/>,
-  database: <FaDatabase />
+  postgres: <SiPostgresql />,
+  database: <FaDatabase />,
+  laptopCode: <FaLaptopCode />,
+  university: <FaGraduationCap />,
 };
 
 const Icon = ({ id }) => obj[id];

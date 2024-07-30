@@ -4,6 +4,7 @@ import { NavTabs, Icon } from "../../components";
 import Footer from "../Footer/Footer";
 import Contacts from "../Contacts/Contacts";
 import About from "../About/About";
+import Education from "../Education/Education";
 
 const datos = [
   {
@@ -14,7 +15,7 @@ const datos = [
   {
     id: "education",
     title: <Icon id="education" />,
-    content: "Education",
+    content: <Education />,
   },
   {
     id: "projects",

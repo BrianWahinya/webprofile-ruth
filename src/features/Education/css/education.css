@@ -1,0 +1,61 @@
+.div-education {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow-y: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.div-education .div-school {
+  display: flex;
+  flex-direction: row;
+  min-height: 60px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 97%;
+  border: 1px solid rgba(55, 55, 55, 0.697);
+  border-radius: 3px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 850ms ease-out;
+  overflow-y: hidden;
+}
+.div-education .div-school:hover {
+  cursor: pointer;
+  background-color: rgba(136, 66, 45, 0.357);
+  transition: all 250ms ease-out;
+  animation: headShake 0.9s;
+}
+.div-education .div-school svg {
+  height: 24px;
+  width: 24px;
+}
+.div-education .div-school div {
+  flex-grow: 1;
+}
+.div-education .div-school div p {
+  padding: 0;
+  margin: 0;
+}
+@keyframes headShake {
+  0% {
+    transform: translateX(0);
+  }
+  6.5% {
+    transform: translateX(-6px) rotateY(-9deg);
+  }
+  18.5% {
+    transform: translateX(5px) rotateY(7deg);
+  }
+  31.5% {
+    transform: translateX(-3px) rotateY(-5deg);
+  }
+  43.5% {
+    transform: translateX(2px) rotateY(3deg);
+  }
+  50% {
+    transform: translateX(0);
+  }
+}
