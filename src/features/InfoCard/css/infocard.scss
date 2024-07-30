@@ -33,9 +33,11 @@
         color: #1c1c1c;
         margin: 0;
         border: none;
+        transition: all 550ms ease-out;
         &:hover:not(.active) {
           background-color: #88422d7a;
           cursor: pointer;
+          transition: all 350ms ease-out;
         }
       }
       .tab-content {

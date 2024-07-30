@@ -24,12 +24,44 @@
   padding: 10px;
   border-radius: 2px;
   background-color: rgba(75, 75, 75, 0.192);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 2px;
+  transition: all 850ms ease-out;
 }
 .div-about .div-skills .div-skill svg {
   height: 1.4em;
   width: 1.4em;
+  margin: 5px 0px;
 }
 .div-about .div-skills .div-skill:hover {
   cursor: pointer;
   background-color: rgba(136, 66, 45, 0.357);
+  transition: all 250ms ease-out;
+  animation: headShake 0.9s;
+}
+.div-about .div-skills .div-skill .p-skill-title {
+  margin: 0;
+}
+@keyframes headShake {
+  0% {
+    transform: translateX(0);
+  }
+  6.5% {
+    transform: translateX(-6px) rotateY(-9deg);
+  }
+  18.5% {
+    transform: translateX(5px) rotateY(7deg);
+  }
+  31.5% {
+    transform: translateX(-3px) rotateY(-5deg);
+  }
+  43.5% {
+    transform: translateX(2px) rotateY(3deg);
+  }
+  50% {
+    transform: translateX(0);
+  }
 }

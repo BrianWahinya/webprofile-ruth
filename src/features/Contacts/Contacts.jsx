@@ -16,7 +16,7 @@ const items = [
   },
   {
     id: "mail",
-    icon: "mail",
+    icon: "mailbox",
     title: "Mailbox",
     content: "10001-001 Tala, Kenya",
   },

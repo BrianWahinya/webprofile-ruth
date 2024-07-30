@@ -36,10 +36,12 @@
   color: #1c1c1c;
   margin: 0;
   border: none;
+  transition: all 550ms ease-out;
 }
 .infocard .infocard__wrapper .div-navtabs .nav-link:hover:not(.active) {
   background-color: rgba(136, 66, 45, 0.4784313725);
   cursor: pointer;
+  transition: all 350ms ease-out;
 }
 .infocard .infocard__wrapper .div-navtabs .tab-content {
   flex-grow: 1;

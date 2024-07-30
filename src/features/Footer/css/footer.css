@@ -10,10 +10,14 @@ footer {
 footer .div-socialmedia a {
   color: #2d2d2d;
   margin-right: 5px;
+  transition: all 50ms ease-out;
 }
 footer .div-socialmedia a svg {
   height: 20px;
   width: 20px;
+}
+footer .div-socialmedia a svg:hover {
+  transform: scale(0.95);
 }
 footer .div-socialmedia a:hover {
   color: rgba(86, 23, 4, 0.8274509804);

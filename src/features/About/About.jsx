@@ -43,9 +43,9 @@ const About = () => {
           const { id, icon, title } = skill;
 
           return (
-            <div key={`skills_key_${id}`} className="div-skill">
+            <div key={`skill_key_${id}`} className="div-skill">
               <Icon id={icon} />
-              <p className="p-skills-title">{title}</p>
+              <p className="p-skill-title">{title}</p>
             </div>
           );
         })}
