@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   height: 100%;
   overflow: auto;
   text-align: center;
@@ -9,6 +10,22 @@
 .div-about p {
   padding: 0;
   margin: 2px;
+}
+.div-about .p-intro {
+  max-width: 300px;
+  overflow-wrap: break-word;
+}
+.div-about .list-skills p {
+  padding: 2px 8px;
+  border: none;
+  background-color: rgba(154, 154, 154, 0.257);
+  transition: all 850ms ease-out;
+}
+.div-about .list-skills p:hover {
+  cursor: pointer;
+  background-color: rgba(136, 66, 45, 0.357);
+  transition: all 250ms ease-out;
+  animation: headShake 0.9s;
 }
 .div-about .div-skills {
   display: flex;

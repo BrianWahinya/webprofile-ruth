@@ -3,6 +3,7 @@ import {
   FaGraduationCap,
   FaUserGraduate,
   FaSquareXTwitter,
+  FaGithub,
   FaSquareGithub,
   FaLinkedin,
   FaWhatsapp,
@@ -13,6 +14,7 @@ import {
   FaDocker,
   FaLaptopCode,
   FaBookOpenReader,
+  FaChartColumn,
 } from "react-icons/fa6";
 import { GrProjects, GrCertificate } from "react-icons/gr";
 import {
@@ -30,12 +32,15 @@ import {
 import { BsMailboxFlag } from "react-icons/bs";
 import { IoLocationOutline, IoBookOutline } from "react-icons/io5";
 import { BiBookReader } from "react-icons/bi";
+import { TfiWrite } from "react-icons/tfi";
+import { GrContact } from "react-icons/gr";
 
 const obj = {
   profile: <CgProfile />,
   education: <GrCertificate />,
   projects: <GrProjects />,
   contacts: <FaPhoneVolume />,
+  contact: <GrContact />,
   fb: <FaFacebookSquare />,
   twitter: <FaSquareXTwitter />,
   github: <FaSquareGithub />,
@@ -50,10 +55,12 @@ const obj = {
   docker: <FaDocker />,
   python: <FaPython />,
   mysql: <SiMysql />,
+  git: <FaGithub />,
   postgres: <SiPostgresql />,
   database: <FaDatabase />,
   laptopCode: <FaLaptopCode />,
   university: <FaGraduationCap />,
+  dataviz: <FaChartColumn />,
 };
 
 const Icon = ({ id }) => obj[id];

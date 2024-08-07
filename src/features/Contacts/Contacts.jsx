@@ -6,7 +6,7 @@ const items = [
     id: "whatsapp",
     icon: "whatsapp",
     title: "Whatsapp",
-    content: "+254701234567",
+    content: "+254795307188",
   },
   {
     id: "email",

@@ -1,0 +1,25 @@
+.div-contact-form {
+  text-align: center;
+}
+.div-contact-form .form-contact {
+  margin: 0 auto;
+  padding: 0px 5px;
+  max-width: 400px;
+}
+.div-contact-form .form-contact input,
+.div-contact-form .form-contact textarea,
+.div-contact-form .form-contact .form-control {
+  background-color: rgba(175, 175, 175, 0.371) !important;
+  border: none;
+  box-shadow: none;
+}
+.div-contact-form .form-contact input:focus ~ .form-label.floating-label {
+  background-color: transparent !important;
+  color: #752912;
+}
+.div-contact-form .form-contact .form-label.floating-label {
+  background-color: transparent;
+}
+.div-contact-form .form-contact .form-label.floating-label::after {
+  background-color: transparent;
+}

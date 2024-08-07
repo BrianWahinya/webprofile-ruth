@@ -1,0 +1,38 @@
+.div-contact-form {
+  text-align: center;
+  .form-contact {
+    margin: 0 auto;
+    padding: 0px 5px;
+    max-width: 400px;
+    input,
+    textarea,
+    .form-control {
+      background-color: rgba(175, 175, 175, 0.371) !important;
+      border: none;
+      box-shadow: none;
+    }
+
+    // .form-control:-ms-autofill,
+    // .form-control:-moz-autofill .form-control:-webkit-autofill,
+    // .form-control:-webkit-autofill:focus,
+    // .form-control:-webkit-autofill:hover,
+    // .form-control:-webkit-autofill:active {
+    //   background-color: #000;
+    //   -webkit-backdrop-filter: blur(2);
+    //   -webkit-box-shadow: 0 0 0 30px rgba(175, 175, 175, 0.356) inset !important;
+    //   -webkit-text-fill-color: #000 !important; /* Change '#000' to your desired text color */
+    // }
+
+    input:focus ~ .form-label.floating-label {
+      background-color: transparent !important;
+      color: #752912;
+    }
+
+    .form-label.floating-label {
+      background-color: transparent;
+      &::after {
+        background-color: transparent;
+      }
+    }
+  }
+}

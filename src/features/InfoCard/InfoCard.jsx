@@ -5,6 +5,7 @@ import Footer from "../Footer/Footer";
 import Contacts from "../Contacts/Contacts";
 import About from "../About/About";
 import Education from "../Education/Education";
+import ContactForm from "../ContactForm/ContactForm";
 
 const datos = [
   {
@@ -26,6 +27,11 @@ const datos = [
     id: "contacts",
     title: <Icon id="contacts" />,
     content: <Contacts />,
+  },
+  {
+    id: "contact",
+    title: <Icon id="contact" />,
+    content: <ContactForm />,
   },
 ];
 

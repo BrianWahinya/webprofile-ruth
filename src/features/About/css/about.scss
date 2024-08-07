@@ -2,12 +2,32 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   height: 100%;
   overflow: auto;
   text-align: center;
   p {
     padding: 0;
     margin: 2px;
+  }
+  .p-intro {
+    max-width: 300px;
+    overflow-wrap: break-word;
+  }
+  .list-skills {
+    p {
+      padding: 2px 8px;
+      border: none;
+      background-color: rgba(154, 154, 154, 0.257);
+      transition: all 850ms ease-out;
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(136, 66, 45, 0.357);
+        transition: all 250ms ease-out;
+        -webkit-animation: headShake 0.9s;
+        animation: headShake 0.9s;
+      }
+    }
   }
   .div-skills {
     display: flex;

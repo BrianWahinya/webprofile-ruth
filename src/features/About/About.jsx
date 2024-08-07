@@ -1,3 +1,4 @@
+import { ListGroup, ListGroupItem } from "reactstrap";
 import { Icon } from "../../components";
 import "./css/about.css";
 
@@ -28,6 +29,22 @@ const skills = [
     title: "Postgres",
   },
   {
+    id: "git",
+    icon: "git",
+    title: "Git",
+  },
+
+  {
+    id: "docker",
+    icon: "docker",
+    title: "Docker",
+  },
+  {
+    id: "dataviz",
+    icon: "dataviz",
+    title: "Echarts/ChartJs",
+  },
+  {
     id: "database",
     icon: "database",
     title: "Database",
@@ -37,7 +54,17 @@ const skills = [
 const About = () => {
   return (
     <div className="div-about">
-      <p>1yr+ experience</p>
+      <p className="p-intro">
+        1yr+ experience in: <br />
+        {/* web-dev, data-visualization, system-design, api-dev and devops(ci/cd) */}
+      </p>
+      <ListGroup horizontal="sm" className="list-skills">
+        <ListGroupItem tag="p">Web-dev</ListGroupItem>
+        <ListGroupItem tag="p">Data-viz</ListGroupItem>
+        <ListGroupItem tag="p">System Design</ListGroupItem>
+        <ListGroupItem tag="p">Api-dev</ListGroupItem>
+        <ListGroupItem tag="p">Devops(ci/cd)</ListGroupItem>
+      </ListGroup>
       <div className="div-skills">
         {skills.map((skill) => {
           const { id, icon, title } = skill;
