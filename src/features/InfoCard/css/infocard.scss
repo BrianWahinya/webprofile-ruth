@@ -8,7 +8,7 @@
   min-width: 315px;
   max-width: 500px;
   min-height: 405px;
-  max-height: 580px;
+  // max-height: 580px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +46,7 @@
         background-color: #a4a4a454;
         padding: 10px;
         .tab-pane {
-          max-height: 242px;
+          max-height: 382px;
           height: 100%;
           width: 100%;
           overflow: auto;
@@ -81,7 +81,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: calc(50% - 237px);
+  top: calc(50% - 310px);
   background-image: url("../../../assets/lady-avatar.png");
   background-position: center;
   background-size: contain;

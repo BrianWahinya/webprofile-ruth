@@ -10,7 +10,7 @@
   flex-wrap: wrap;
 }
 .div-contacts div {
-  flex: 0 1 50%;
+  flex: 0 1 40%;
   box-sizing: border-box;
 }
 .div-contacts div p {
