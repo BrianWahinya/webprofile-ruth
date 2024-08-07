@@ -15,6 +15,9 @@
   max-width: 300px;
   overflow-wrap: break-word;
 }
+.div-about .list-skills {
+  margin-bottom: 5px;
+}
 .div-about .list-skills p {
   padding: 2px 8px;
   border: none;
