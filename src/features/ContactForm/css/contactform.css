@@ -13,7 +13,8 @@
   border: none;
   box-shadow: none;
 }
-.div-contact-form .form-contact input:focus ~ .form-label.floating-label {
+.div-contact-form .form-contact input:focus ~ .form-label.floating-label,
+.div-contact-form .form-contact textarea:focus ~ .form-label.floating-label {
   background-color: transparent !important;
   color: #752912;
 }
@@ -22,4 +23,7 @@
 }
 .div-contact-form .form-contact .form-label.floating-label::after {
   background-color: transparent;
+}
+.div-contact-form .form-contact textarea#message {
+  min-height: 150px !important;
 }

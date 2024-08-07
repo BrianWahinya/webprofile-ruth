@@ -32,8 +32,17 @@ const ContactForm = () => {
             Subject
           </Label>
         </FormGroup>
-        <FormGroup>
-          <Input name="message" type="textarea" placeholder="Your message" />
+        <FormGroup floating>
+          <Input
+            id="message"
+            name="message"
+            type="textarea"
+            placeholder="Your message"
+            rows="6"
+          />
+          <Label className="floating-label" for="message">
+            Your message
+          </Label>
         </FormGroup>
       </Form>
     </div>

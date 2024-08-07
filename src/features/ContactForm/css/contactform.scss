@@ -22,10 +22,12 @@
     //   -webkit-box-shadow: 0 0 0 30px rgba(175, 175, 175, 0.356) inset !important;
     //   -webkit-text-fill-color: #000 !important; /* Change '#000' to your desired text color */
     // }
-
-    input:focus ~ .form-label.floating-label {
-      background-color: transparent !important;
-      color: #752912;
+    input,
+    textarea {
+      &:focus ~ .form-label.floating-label {
+        background-color: transparent !important;
+        color: #752912;
+      }
     }
 
     .form-label.floating-label {
@@ -33,6 +35,10 @@
       &::after {
         background-color: transparent;
       }
+    }
+
+    textarea#message {
+      min-height: 150px !important;
     }
   }
 }
