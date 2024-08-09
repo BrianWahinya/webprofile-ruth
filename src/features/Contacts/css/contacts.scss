@@ -10,16 +10,25 @@
   flex-wrap: wrap;
   div {
     flex: 0 1 40%;
+    margin: 5px;
+    padding: 10px 2px;
     box-sizing: border-box;
+    background-color: #9c9c9c3f;
+    transition: all 550ms ease-out;
     p {
       padding: 0;
       margin: 2px;
       text-align: center;
       vertical-align: middle;
     }
+    .p-contacts-title {
+      font-size: 1.13em;
+    }
     &:hover {
+      background-color: #98442b30;
+      transition: all 350ms ease-out;
       .p-contacts-title {
-        color: #5d1a05;
+        color: #491809;
         cursor: pointer;
       }
     }

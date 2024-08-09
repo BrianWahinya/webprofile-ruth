@@ -1,6 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import "./css/infocard.css";
-import { NavTabs, Icon } from "../../components";
+import { NavTabs, Icon, Avatar } from "../../components";
 import Footer from "../Footer/Footer";
 import Contacts from "../Contacts/Contacts";
 import About from "../About/About";
@@ -39,7 +39,7 @@ const InfoCard = () => {
   return (
     <div className="infocard">
       <div className="infocard__img"></div>
-      <div className="infocard__avatar"></div>
+      <Avatar />
       <div className="infocard__title">
         <TypeAnimation
           aria-label="Hey, I am Ruth Mumo. I am a Software Engineer"
