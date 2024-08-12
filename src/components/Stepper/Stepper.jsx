@@ -3,9 +3,6 @@ import { Button, Progress } from "reactstrap";
 import { genRandomId } from "../../helpers/utils";
 
 import "./css/stepper.css";
-import wave_1 from "../../assets/wave_1.svg";
-import wave_2 from "../../assets/wave_2.svg";
-import wave_3 from "../../assets/wave_3.svg";
 
 const calcPercent = (idx, dataLen) =>
   idx === 0 ? 0 : idx === dataLen - 1 ? 100 : (idx * 100) / (dataLen - 1);
@@ -53,14 +50,7 @@ const Stepper = ({ data }) => {
           ></p>
         ))}
       </div>
-      <div
-        className="stepper-content"
-        style={{
-          backgroundImage: `url(${
-            bgImage === 1 ? wave_1 : bgImage === 2 ? wave_2 : wave_3
-          })`,
-        }}
-      >
+      <div className={`stepper-content bg_${bgImage}`}>
         {data[activeStep].content}
       </div>
       <div className="stepper-controls">

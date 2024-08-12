@@ -41,7 +41,6 @@
     padding-bottom: 40px;
     border-radius: 5px;
     background-color: #ac5c4328;
-    // background-image: url("../../../assets/wave.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -51,6 +50,18 @@
     text-align: center;
     animation: fadein 2s;
     transition: all 500ms;
+    &.bg_1 {
+      background-image: url("../../../assets/wave_1.svg");
+      transition: all 500ms;
+    }
+    &.bg_2 {
+      background-image: url("../../../assets/wave_2.svg");
+      transition: all 500ms;
+    }
+    &.bg_3 {
+      background-image: url("../../../assets/wave_3.svg");
+      transition: all 500ms;
+    }
   }
   .stepper-controls {
     display: flex;

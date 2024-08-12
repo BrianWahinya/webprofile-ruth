@@ -51,6 +51,18 @@
   animation: fadein 2s;
   transition: all 500ms;
 }
+.div-stepper .stepper-content.bg_1 {
+  background-image: url("../../../assets/wave_1.svg");
+  transition: all 500ms;
+}
+.div-stepper .stepper-content.bg_2 {
+  background-image: url("../../../assets/wave_2.svg");
+  transition: all 500ms;
+}
+.div-stepper .stepper-content.bg_3 {
+  background-image: url("../../../assets/wave_3.svg");
+  transition: all 500ms;
+}
 .div-stepper .stepper-controls {
   display: flex;
   justify-content: space-between;
