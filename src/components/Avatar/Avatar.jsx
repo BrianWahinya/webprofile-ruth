@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Proposal } from "../../features";
 
-const clickTarget = 7;
+const clickTarget = 5;
 const Avatar = () => {
   const [clicked, setClicked] = useState(0);
 
