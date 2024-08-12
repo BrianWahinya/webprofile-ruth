@@ -25,7 +25,7 @@ const statements = [
   },
   {
     id: 8,
-    content: "The only games I want to play is those that make you happy😉",
+    content: "The only games I want to play are those that make you happy😉",
   },
   { id: 9, content: "Will you be my girlfriend❤️???" },
 ];
