@@ -12,5 +12,5 @@ setTimeout(
         <App />
       </React.StrictMode>
     ),
-  3000
+  1500
 );
