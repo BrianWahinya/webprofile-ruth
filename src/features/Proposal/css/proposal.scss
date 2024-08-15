@@ -4,6 +4,40 @@
       flex-grow: 1;
     }
   }
+  .div-select-answer {
+    flex-grow: 1;
+    max-width: 300px;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    .img-love-mocha {
+      width: 120px;
+      margin-top: -20px;
+      margin-bottom: -30px;
+    }
+    .no-choices {
+      margin-top: 10px;
+      font-size: smaller;
+      color: #611c0e;
+    }
+    button.custom-btn {
+      width: 40px;
+      border-radius: 5px;
+      margin: 5px;
+      color: #9a3622;
+      border: 1px solid #9a3622;
+      background-color: transparent;
+      &:hover {
+        // color: #611c0e;
+        border-color: #611c0e;
+        background-color: #611c0e1c;
+      }
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
 }
 
 svg#love_svg {

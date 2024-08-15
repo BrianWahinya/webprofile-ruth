@@ -1,6 +1,39 @@
 .modal-proposal .modal-header .modal-title {
   flex-grow: 1;
 }
+.modal-proposal .div-select-answer {
+  flex-grow: 1;
+  max-width: 300px;
+}
+.modal-proposal .div-select-answer p {
+  margin: 0;
+  padding: 0;
+}
+.modal-proposal .div-select-answer .img-love-mocha {
+  width: 120px;
+  margin-top: -20px;
+  margin-bottom: -30px;
+}
+.modal-proposal .div-select-answer .no-choices {
+  margin-top: 10px;
+  font-size: smaller;
+  color: #611c0e;
+}
+.modal-proposal .div-select-answer button.custom-btn {
+  width: 40px;
+  border-radius: 5px;
+  margin: 5px;
+  color: #9a3622;
+  border: 1px solid #9a3622;
+  background-color: transparent;
+}
+.modal-proposal .div-select-answer button.custom-btn:hover {
+  border-color: #611c0e;
+  background-color: rgba(97, 28, 14, 0.1098039216);
+}
+.modal-proposal .div-select-answer button.custom-btn:active {
+  transform: scale(0.95);
+}
 
 svg#love_svg {
   width: 100%;

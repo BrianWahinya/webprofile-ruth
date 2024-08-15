@@ -1,4 +1,5 @@
 import { Modal, Stepper } from "../../components";
+import Answer from "./Answer";
 import "./css/proposal.css";
 
 const statements = [
@@ -27,7 +28,7 @@ const statements = [
     id: 8,
     content: "The only games I want to play are those that make you happy😉",
   },
-  { id: 9, content: "Will you be my girlfriend❤️???" },
+  { id: 9, content: <Answer /> },
 ];
 
 const Proposal = ({ toggle }) => {
