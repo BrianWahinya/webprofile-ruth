@@ -9,6 +9,7 @@ const calcPercent = (idx, dataLen) =>
   idx === 0 ? 0 : idx === dataLen - 1 ? 100 : (idx * 100) / (dataLen - 1);
 
 const Stepper = ({ data }) => {
+  const [isAudioLoaded, setIsAudioLoaded] = useState(false);
   const [activeStep, setActiveStep] = useState(0);
   const [bgImage, setBgImage] = useState(1);
 
@@ -28,11 +29,21 @@ const Stepper = ({ data }) => {
 
   useLayoutEffect(() => {
     const audio = new Audio(music_mp3);
+    const loadAudio = () => {
+      audio.addEventListener("canplaythrough", () => {
+        setTimeout(() => {
+          setIsAudioLoaded(true);
+        }, 1000);
+      });
+      audio.load(); // Start loading the audio file
+    };
+    loadAudio();
+
     const replay = () => {
       audio.play(); // Replay the audio when it ends
     };
 
-    if (activeStep === 0) {
+    if (activeStep === 0 && isAudioLoaded) {
       audio.play();
       audio.addEventListener("ended", replay);
     }
@@ -40,8 +51,15 @@ const Stepper = ({ data }) => {
       audio.pause();
       audio.currentTime = 0;
       audio.removeEventListener("ended", replay);
+      audio.removeEventListener("canplaythrough", () => {
+        setIsAudioLoaded(true);
+      });
     };
-  }, []);
+  }, [isAudioLoaded]);
+
+  if (!isAudioLoaded) {
+    return <div>Loading... please wait</div>; // Show a loading message or spinner
+  }
 
   return (
     <div className="div-stepper">
@@ -69,28 +87,30 @@ const Stepper = ({ data }) => {
         ))}
       </div>
       <div className={`stepper-content bg_${bgImage}`}>
-        {data[activeStep].content}
+        {!isAudioLoaded ? "Loading..." : data[activeStep].content}
       </div>
-      <div className="stepper-controls">
-        <Button
-          color="primary"
-          size="sm"
-          onClick={prev}
-          disabled={activeStep === 0}
-          outline={activeStep === 0}
-        >
-          Prev
-        </Button>
-        <Button
-          color="primary"
-          size="sm"
-          onClick={next}
-          disabled={activeStep === data.length - 1}
-          outline={activeStep === data.length - 1}
-        >
-          Next
-        </Button>
-      </div>
+      {isAudioLoaded && (
+        <div className="stepper-controls">
+          <Button
+            color="primary"
+            size="sm"
+            onClick={prev}
+            disabled={activeStep === 0}
+            outline={activeStep === 0}
+          >
+            Prev
+          </Button>
+          <Button
+            color="primary"
+            size="sm"
+            onClick={next}
+            disabled={activeStep === data.length - 1}
+            outline={activeStep === data.length - 1}
+          >
+            Next
+          </Button>
+        </div>
+      )}
     </div>
   );
 };
