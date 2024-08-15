@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import { Button, Progress } from "reactstrap";
 import { genRandomId } from "../../helpers/utils";
+import music_mp3 from "../../assets/love-music.mp3";
 
 import "./css/stepper.css";
 
@@ -24,6 +25,23 @@ const Stepper = ({ data }) => {
     setActiveStep((p) => (p === data.length - 1 ? data.length - 1 : (p += 1)));
     changeBg();
   };
+
+  useLayoutEffect(() => {
+    const audio = new Audio(music_mp3);
+    const replay = () => {
+      audio.play(); // Replay the audio when it ends
+    };
+
+    if (activeStep === 0) {
+      audio.play();
+      audio.addEventListener("ended", replay);
+    }
+    return () => {
+      audio.pause();
+      audio.currentTime = 0;
+      audio.removeEventListener("ended", replay);
+    };
+  }, []);
 
   return (
     <div className="div-stepper">
