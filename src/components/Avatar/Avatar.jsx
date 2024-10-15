@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Proposal } from "../../features";
+// import { Proposal } from "../../features";
 
 const clickTarget = 5;
 const Avatar = () => {
@@ -21,7 +21,7 @@ const Avatar = () => {
   return (
     <>
       <div className="infocard__avatar" onClick={onClick}></div>
-      <Proposal toggle={clicked === clickTarget} />
+      {/* <Proposal toggle={clicked === clickTarget} /> */}
     </>
   );
 };
